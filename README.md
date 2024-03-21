@@ -8,12 +8,13 @@ Integration Apache Guacamole with LibreNMS - you'll be able to SSH to your devic
 ```php
 $GUACAMOLE_URL = 'https://localhost/ssh/#/client/'
 ```
-where https://localhost/ssh/ url where you installed Apache Guacamole
+where https://localhost/ssh/ url where you had configured to run Apache Guacamole
 
-5. Adjust your LibreNMS config.php with
+5. Adjust import.sh according you database access credentials (all parameters are pretty self explanatory)
+6. Adjust your LibreNMS config.php with
 ```php
 $config['gateone']['server'] = 'http://localhost/guacamole.php';
 ```
 where localhost is where your run your LibreNMS
 
-6. Start guacamole.sh and optionally - you can run it in cron every N minutes.
+7. Start guacamole.sh and optionally - you can run it in cron every N minutes.
