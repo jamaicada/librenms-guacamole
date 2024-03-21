@@ -9,6 +9,7 @@ Integration Apache Guacamole with LibreNMS - you'll be able to SSH to your devic
 $GUACAMOLE_URL = 'https://localhost/ssh/#/client/'
 ```
 where https://localhost/ssh/ url where you installed Apache Guacamole
+
 5. Adjust your LibreNMS config.php with
 ```php
 $config['gateone']['server'] = 'http://localhost/guacamole.php';
