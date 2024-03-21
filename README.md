@@ -1,5 +1,5 @@
 # librenms-guacamole
-Integration Apache Guacamole with LibreNMS.
+Integration Apache Guacamole with LibreNMS - you'll be able to SSH to your devices using SSH button just using your browser. But be carefull - with power comes great responsibility. 
 
 1. Install Apache Guacamole (you'll find dozen of how-to's in google)
 2. Put guacamole.php to librenms html directory
@@ -10,4 +10,5 @@ Integration Apache Guacamole with LibreNMS.
 $config['gateone']['server'] = 'http://localhost/guacamole.php';
 ```
 where localhost is where your run your LibreNMS
+
 6. Start guacamole.sh and optionally - you can run it in cron every N minutes.
